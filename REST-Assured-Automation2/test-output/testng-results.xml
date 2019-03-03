@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3940" started-at="2019-03-03T04:02:27Z" finished-at="2019-03-03T04:02:31Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="3940" started-at="2019-03-03T04:02:27Z" finished-at="2019-03-03T04:02:31Z">
+      <class name="testRunners.TestRunner">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="setUpClass" is-config="true" duration-ms="103" started-at="2019-03-03T04:02:27Z" finished-at="2019-03-03T04:02:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" duration-ms="1626" started-at="2019-03-03T04:02:27Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-03T04:02:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test the happy path for get all"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Restful services to get and search countries"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" duration-ms="806" started-at="2019-03-03T04:02:29Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-03T04:02:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search country by 2 character alphanumeric ISO code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Restful services to get and search countries"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" duration-ms="332" started-at="2019-03-03T04:02:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-03T04:02:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search country by 3 character alphanumeric ISO code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Restful services to get and search countries"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Status Check Passed - Supposed to be failed!!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Status Check Passed - Supposed to be failed!!!
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at stepDefinition.test.checkResponseStatusIsNot200(test.java:71)
+at ✽.I validate response is not successfull(file:src/test/resources/features/test.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" duration-ms="315" started-at="2019-03-03T04:02:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-03T04:02:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Test the happy path for get all"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Restful services to get and search countries"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" duration-ms="288" started-at="2019-03-03T04:02:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-03T04:02:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search country by 2 character alphanumeric ISO code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Restful services to get and search countries"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="FAIL" signature="runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="runScenario" duration-ms="390" started-at="2019-03-03T04:02:31Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-03-03T04:02:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Search country by 3 character alphanumeric ISO code"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test the Restful services to get and search countries"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Status Check Passed - Supposed to be failed!!!]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Status Check Passed - Supposed to be failed!!!
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
+at stepDefinition.test.checkResponseStatusIsNot200(test.java:71)
+at ✽.I validate response is not successfull(file:src/test/resources/features/test2.feature:36)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:testRunners.TestRunner@31a5c39e]" name="tearDownClass" is-config="true" duration-ms="9" started-at="2019-03-03T04:02:31Z" finished-at="2019-03-03T04:02:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- testRunners.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
